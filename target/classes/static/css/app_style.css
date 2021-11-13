@@ -1,0 +1,106 @@
+/*
+ * Copyright (c) 2021. By LANKOANDE B David, BURKINA FASO.
+ * All rights reserved
+ */
+
+.app-widget-style {
+    -fx-background-color: white;
+}
+
+.input-text-field, .input-text-area {
+    -fx-background-color: -fx-text-box-border, white;
+    -fx-background-insets: 0, 1 1 1 1 ;
+    -fx-background-radius: 2 ;
+    -fx-font-size: 15px;
+}
+
+.input-text-field-search {
+    -fx-background-color: -fx-text-box-border, white;
+    -fx-background-insets: 0, 1 1 1 1 ;
+    -fx-background-radius: 20 ;
+    -fx-font-size: 13px;
+}
+
+.button-cancel {
+    /*-fx-background-color: firebrick;*/
+    -fx-background-color: #CC0000;
+    -fx-text-fill: white;
+}
+.button-validate {
+    -fx-background-color: #330033;
+    -fx-text-fill: white;
+}
+.input-text-field:focused, .input-text-field-search:focused{
+    -fx-background-color: #003432, white;
+}
+
+.input-text-area:focused{
+    -fx-border-color: black;
+}
+
+.badge {
+    -fx-background-color: #ff4500;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+}
+
+.common-button {
+    -fx-background-color: #003432, #034e49;
+    -fx-background-insets: 0, 1 1 1 1;
+    -fx-background-radius: 2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.error-message-text {
+    -fx-text-fill: #CC0000;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}
+
+.label-text-above-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+    -fx-font-weight: bold;
+}
+/*.common-button:focused {*/
+/*    -fx-background-color: , #003432;*/
+/*}*/
+
+.exit-app-button, .minimize-app-button, .maximize-app-button {
+    -fx-background-radius: 50;
+    -fx-fill: white;
+    -fx-background-color: transparent;
+}
+
+.minimize-app-button:hover, .maximize-app-button:hover {
+    -fx-background-color: #09746c;
+    -fx-cursor: pointer;
+}
+
+.exit-app-button:hover {
+    -fx-background-color: #ef3f3f;
+    -fx-cursor: pointer;
+}
+
+.tool-bar-resize-icon {
+    -fx-fill: white;
+}
+
+.tool-bar {
+    -fx-background-color: #003432;
+    -fx-background-insets: 0, 0 0 0 0;
+    /*-fx-effect: dropshadow(three-pass-box  , rgba(0,0,0,0.5) , 5, 0.0 , 0 , 3);*/
+    -fx-content-display: flex;
+}
+
+.shadow-pane {
+    -fx-background-color: #efefef;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-effect: dropshadow(three-pass-box  , rgba(40, 40, 40, 0.4), 30, 0.0 , 10 , 10);
+}
+

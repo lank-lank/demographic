@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
+           prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="esi.sisad.seman.controller.HomeController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="630.0" prefWidth="208.0" style="-fx-background-color: #78909c;">
+                    <children>
+                        <HBox prefHeight="166.0" prefWidth="204.0"
+                              style="-fx-border-width: 5; -fx-border-color: black;">
+                            <children>
+                                <StackPane prefHeight="150.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <ImageView fitHeight="127.0" fitWidth="167.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@../static/asset/logo.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </StackPane>
+                            </children>
+                        </HBox>
+                        <JFXButton fx:id="book_btn" alignment="CENTER" graphicTextGap="8.0" onAction="#onChangeView"
+                                   prefHeight="45.0" prefWidth="226.0" text="Books">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="BOOK" size="25" text=""/>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="graphic_btn" alignment="CENTER" graphicTextGap="8.0"
+                                   onAction="#onChangeView" prefHeight="45.0" prefWidth="217.0" text="Graphic">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="PIE_CHART" size="25"/>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </JFXButton>
+                    </children>
+                </VBox>
+                <VBox prefHeight="630.0" prefWidth="1000.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox prefHeight="23.0" prefWidth="996.0" style="-fx-background-color: #78909c;"/>
+                        <StackPane fx:id="root_home" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

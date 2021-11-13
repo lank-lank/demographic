@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root_book" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esi.sisad.seman.controller.CountryController">
+    <children>
+        <VBox prefHeight="630.0" prefWidth="1000.0">
+            <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="93.0" prefWidth="1000.0" spacing="15.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="512.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Pane prefHeight="84.0" prefWidth="394.0">
+                                    <children>
+                                        <TextField fx:id="search_txt" layoutY="22.0" prefHeight="41.0" prefWidth="360.0" promptText="Rechercher ...." style="-fx-background-color: -fx-text-box-border, white; -fx-background-insets: 0, 1 1 1 1 ;;">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </TextField>
+                                        <FontAwesomeIconView glyphName="SEARCH" layoutX="328.0" layoutY="49.0" size="20" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <JFXButton graphicTextGap="8.0" prefHeight="43.0" prefWidth="159.0" style="-fx-background-color: #00695c;" text="Modifier" textFill="WHITE">
+                            <graphic>
+                                <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" size="20" />
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="8.0" layoutX="836.0" layoutY="19.0" onAction="#onAddNewCountry" prefHeight="43.0" prefWidth="159.0" style="-fx-background-color: #37474f;" text="Ajouter" textFill="WHITE">
+                            <graphic>
+                                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="15.0" right="15.0" />
+                    </padding>
+                </HBox>
+                <VBox prefHeight="555.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+                    <padding>
+                        <Insets left="15.0" right="15.0" />
+                    </padding>
+                    <children>
+                        <TableView fx:id="countries_table" focusTraversable="false" prefHeight="493.0" prefWidth="970.0" stylesheets="@../static/css/tableview.css">
+                            <columns>
+                                <TableColumn fx:id="country_column" prefWidth="306.0" text="Pays" />
+                                <TableColumn fx:id="capital_column" prefWidth="239.0" text="Capitale" />
+                                <TableColumn fx:id="population_column" prefWidth="257.0" text="Population" />
+                                <TableColumn fx:id="actions_column" prefWidth="167.0" sortable="false" text="Actions" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</StackPane>
